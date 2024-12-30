@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <script src="script/script.js"></script>
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>2048</title>
 </head>
 <body>
+    <h1>2048</h1>
     <div id="Start_game">
         <button onclick="Start_game()">Start</button>
+    </div>
+    <div id="game" style="display: none;">
+        <div id="table"></div>
+        <div id="move">
+            <button onclick="move_direction(0)" class="arrows">🡹</button>
+            <div>
+                <button onclick="move_direction(3)" class="arrows">🡸</button>
+                <button class="arrows">️</button>
+                <button onclick="move_direction(1)" class="arrows">🡺</button>
+            </div>
+            <button onclick="move_direction(2)" class="arrows">🡻</button>
+        </div>
+
     </div>
 </body>
 </html>
