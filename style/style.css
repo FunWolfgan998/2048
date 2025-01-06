@@ -1,39 +1,117 @@
 *{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+    color: #47dc16;
 }
-body{
-    background-color: aqua;
-    
-    margin:0 ;
-    padding:0 ;
+body{    
+    background-color: #348419;
     display: flex;
     flex-direction: column;
-    justify-content: center;   
-    align-items: center;        
-    height: 100vh;
+    justify-content: center;
+    align-items: center;   
+
 }
 table{
-    background-color: #454234;
-    border-radius: 8px;
+    border-spacing: 5px;
+    background-color: #854905;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
 }
 td{
+    width: 90px;
+    height: 90px;
+    background-color:azure;
+    border-radius: 5px; 
     text-align: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-    background-color: bisque;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
+.griglia_sopra {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0px;
+  }
+
+.block {    
+    width: 91.5px;
+    height: 91.5px;
+    background-color: #348419;
+    visibility: visible;
+    position: absolute;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.12s ease-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
 .arrows{
-    width: 50px;
-    height: 50px;
-    margin: 8px;
+    color: #c96b00;
+    background-color: #854905;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 22px;
+    border: 0px;
+    font-size: 2em;
 }
-#move{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;   
-    align-items: center;
 
+#move{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gioco{
+    
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#score_and_time{
+    margin: 10px;
+}
+#start_button{
+    color: #c96b00;
+    background-color: #854905;
+    width: 160px;
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 22px;
+    border: 0px;
+    font-size: 2em;
+}
+#message{
+    color: #c96b00;
+    background-color: #854905;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    height: 140px;
+    line-height: 140px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    border-radius: 18px;
+    border: 0px;
+    font-size: 1.5em;
 }

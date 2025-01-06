@@ -8,21 +8,29 @@
 </head>
 <body>
     <h1>2048</h1>
-    <div id="Start_game">
-        <button onclick="Start_game()">Start</button>
+    <div id="best"></div>
+    <div id="message" style="display: none;"></div>
+    <div id="start_game">
+        <button onclick="Start_game()" id="start_button">Start</button>
     </div>
     <div id="game" style="display: none;">
-        <div id="table"></div>
-        <div id="move">
-            <button onclick="move_direction(0)" class="arrows">🡹</button>
-            <div>
-                <button onclick="move_direction(3)" class="arrows">🡸</button>
-                <button class="arrows">️</button>
-                <button onclick="move_direction(1)" class="arrows">🡺</button>
-            </div>
-            <button onclick="move_direction(2)" class="arrows">🡻</button>
-        </div>
 
+        <div id="gioco">
+            <div id="score_and_time">
+                <div id="time"></div>
+                <div id="score"></div>
+            </div>
+            <div id="table"></div>
+            <div id="move">
+                <button onclick="rimuovi_piccoli()" class="arrows" id="cestino">🗑️</button>
+                <button onclick="move_direction(0)" class="arrows">🡹</button>
+                <button onclick="move_direction(3)" class="arrows">🡸</button>
+                <button onclick="move_direction(1)" class="arrows">🡺</button>
+                <button onclick="move_direction(2)" class="arrows">🡻</button>
+                <button onclick="riordina()" class="arrows" id="ordine">🔄</button>
+    
+            </div>
+        </div>
     </div>
 </body>
 </html>
